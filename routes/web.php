@@ -18,15 +18,13 @@ Route::get('/linkstorage', function () {
 });
 Auth::routes();
 Auth::routes(['verify' => true]);
+
 Route::get('/',function(){
     return view('welcome');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Route::get('/user',[App\Http\Controllers\Auth\LoginController::class,'index']);
-
-Route::get('/check_roles', [App\Http\Controllers\HomeController::class, 'check_roles']);
 
 /*   USER ROUTES  */
 /* Route::redirect('/user', '/user/home');
