@@ -7,13 +7,61 @@
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
-.style2{
+.carousel-control-prev {
+    justify-content: start !important;
+}
+
+.carousel-control-next {
+    justify-content: end !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.font1 {
     font-size: 22px;
     line-height: 35px;
     margin: 30px;
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px
 }
-.style6{
+
+.font2 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.font3 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.font4 {
     font-size: 30px;
     margin: 30px;
+}
+.carousel-caption{
+    bottom: 8rem !important;
 }

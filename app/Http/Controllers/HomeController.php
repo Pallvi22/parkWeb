@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-       // $this->middleware('auth');
+        $this->middleware('auth');
     }
 
     /**
@@ -23,9 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('user.home');
+        return view('home');
     }
-    public function check_roles()
+    /* public function check_roles()
     {
         if(Auth::user()->role=='admin'){
             return redirect('/admin');
@@ -33,5 +33,5 @@ class HomeController extends Controller
         else{
             return redirect('/user');
         }
-    }
+    } */
 }
